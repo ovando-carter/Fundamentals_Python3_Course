@@ -1,0 +1,46 @@
+INSTALLING PYTHON
+
+MAC
+
+Most modern versions of MacOS come pre-installed with Python 2, however Python 3 is now the standard and should be installed as well. Python 3 can be installed using the official Python 3 installer.
+
+Go to the Python Releases for Mac OS X page and download the latest stable release macOS 64-bit/32-bit installer.
+After the download is complete, run the installer and click through the setup steps leaving all the pre-selected installation defaults.
+Once complete, we can check that Python was installed correctly by opening a Terminal and entering the command python3 --version. The latest Python 3.7 version number should print to the Terminal.
+ADVANCED
+
+Since our system now has both Python 2 (which came pre-installed) and Python 3, we must remember to use the python3 command (instead of just python) when running scripts. If you would rather not have to remember the python3 command and just use python instead, then creating a command alias is your best bet.
+
+Execute open ~/.bash_profile from a Terminal (if the file was not found, then run touch ~/.bash_profile first).
+Copy and paste alias python="python3" into the now open .bash_profile file and save.
+While we’re at it, go ahead and copy and paste alias pip="pip3" into the file as well in order to create an alias for the Python 3 pip package manager.
+Finally, restart the Terminal and run python --version. We should see the exact same output as running python3 --version.
+
+INSTALLING MINICONDA
+
+MAC
+
+Follow the below instructions to install the latest Miniconda version for Mac.
+
+Go to the Miniconda Download page and download the Python 3.7 Mac OS X 64-bit .pkg installer.
+After the download is complete, run the installer and click through the setup steps leaving all the pre-selected installation defaults.
+Once complete, we can check that Miniconda was installed correctly by opening a Terminal and entering the command conda list. This will print a list of packages installed by Miniconda.
+
+INSTALLING JUPYTER NOTEBOOK
+
+Now that we have a Python distribution installed and were able to run some Python code, let’s install the Jupyter Notebook package. Jupyter Notebook is an open-source web application that allows us to create and share documents that contain live code, equations, visualizations and narrative text. This is a fantastic way to both learn and share Python code and the installation is made easier by our package installer! The installation steps differ depending on which Python distribution we installed above, so be sure to jump to the appropriate section.
+
+USING STANDARD PYTHON
+
+Follow the below instructions to install the Jupyter Notebook package using the pip Python package manager.
+
+Open a new Terminal (Mac) or Command Prompt (Windows).
+Run pip install jupyter to download and install the Jupyter Notebook package.
+Once complete, we can check that Jupyter Notebook was successfully installed by running jupyter notebook from a Terminal (Mac) / Command Prompt (Windows). This will startup the Jupyter Notebook server, print out some information about the notebook server in the console, and open up a new browser tab at http://localhost:8888.
+USING MINICONDA
+
+Follow the below instructions to install the Jupyter Notebook package using the Miniconda package manager conda.
+
+Open a new Terminal (Mac) or Command Prompt (Windows).
+Run conda install jupyter to download and install the Jupyter Notebook package.
+Once complete, we can check that Jupyter Notebook was successfully installed by running jupyter notebook from a Terminal (Mac) / Command Prompt (Windows). This will startup the Jupyter Notebook server, print out some information about the notebook server in the console, and open up a new browser tab to http://localhost:8888

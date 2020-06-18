@@ -1,0 +1,41 @@
+Last login: Fri May 29 00:14:03 on ttys000
+ovandoworkbook:~ apple$ python3
+-bash: python3: command not found
+ovandoworkbook:~ apple$ python 3
+python: can't open file '3': [Errno 2] No such file or directory
+ovandoworkbook:~ apple$ python 3
+python: can't open file '3': [Errno 2] No such file or directory
+ovandoworkbook:~ apple$ python
+Python 2.7.10 (default, Feb 22 2019, 21:55:15) 
+[GCC 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.37.14)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> my_info = ('mike', 24, 'Programmer')
+>>> my_info
+('mike', 24, 'Programmer')
+>>> my_info[0]
+'mike'
+>>> my_info[-1]
+'Programmer'
+>>> my_info[0] = 'Michael'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> 
+>>> name, age, occupation = my_info
+>>> name
+'mike'
+>>> age
+24
+>>> occupation
+'Programmer'
+>>> 
+>>> 
+>>> one_element_tuple = (4) 
+>>> one_element_tuple
+4
+>>> (1+3)*8
+32
+>>> one_element_tuple = (4, )
+>>> one_element_tuple
+(4,)
+>>> 

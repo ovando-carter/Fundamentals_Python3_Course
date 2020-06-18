@@ -1,0 +1,56 @@
+## cd /Users/apple/Documents/coding/Courses/codeacademy/python/1.Intro_to_python_3/6.strings ##
+Last login: Fri Jun  5 16:14:48 on ttys002
+(base) ovandoworkbook:~ apple$ python3
+Python 3.7.6 (default, Jan  8 2020, 13:42:34) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from datetime import datetime
+>>> 
+>>> birthday = datetime(1989,5,26,12,25,00,00) # datetime(year,month, date, hr, min,sec, micro-sec) 
+>>> 
+>>> birthday.year
+1989
+>>> birthday.month
+5
+>>> birthday.weekday
+<built-in method weekday of datetime.datetime object at 0x10f875a50>
+>>> birthday.weekday()
+4
+>>> datetime.now()
+datetime.datetime(2020, 6, 6, 11, 58, 34, 286907)
+>>> datetime.now() - birthday
+datetime.timedelta(days=11333, seconds=84905, microseconds=367833)
+>>> 
+>>> 
+>>> #parse date
+>>> parsed_date = datetime.strptime('Jan 15, 2018','%b %d, %Y') #check out python docs for version 3 to find other representations.
+>>> 
+>>> parsed_date.month
+1
+>>> parsed_date.year
+2018
+>>> # turns a string into a date format. You can also do this for time.
+>>> 
+>>> ## - using strftime
+>>> 
+>>> date_string = datetime.strftime(datetime.now(),'%b %d, %Y' )
+>>> date_string
+'Jun 06, 2020'
+>>> # you can see that you can convert the format of a date into a string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

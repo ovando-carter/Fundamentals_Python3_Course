@@ -1,0 +1,65 @@
+Last login: Sat Jun  6 13:49:34 on ttys000
+(base) ovandoworkbook:2.coded_correspondence apple$ pip -- version
+ERROR: unknown command "version"
+(base) ovandoworkbook:2.coded_correspondence apple$ pip --version
+pip 19.2.3 from /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/pip (python 3.8)
+(base) ovandoworkbook:2.coded_correspondence apple$ pip install --user pipenv
+Collecting pipenv
+  Downloading https://files.pythonhosted.org/packages/f6/fe/0adf70655fc4b6f0118f22489b3aac80b6f8a2cb38dd4bf071427eb82c14/pipenv-2020.6.2-py2.py3-none-any.whl (3.9MB)
+     |████████████████████████████████| 3.9MB 448kB/s 
+Collecting virtualenv (from pipenv)
+  Downloading https://files.pythonhosted.org/packages/57/6e/a13442adf18bada682f88f55638cd43cc7a39c3e00fdcf898ca4ceaeb682/virtualenv-20.0.21-py2.py3-none-any.whl (4.7MB)
+     |████████████████████████████████| 4.7MB 390kB/s 
+Requirement already satisfied: setuptools>=36.2.1 in /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages (from pipenv) (41.2.0)
+Collecting certifi (from pipenv)
+  Downloading https://files.pythonhosted.org/packages/57/2b/26e37a4b034800c960a00c4e1b3d9ca5d7014e983e6e729e33ea2f36426c/certifi-2020.4.5.1-py2.py3-none-any.whl (157kB)
+     |████████████████████████████████| 163kB 643kB/s 
+Requirement already satisfied: pip>=18.0 in /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages (from pipenv) (19.2.3)
+Collecting virtualenv-clone>=0.2.5 (from pipenv)
+  Downloading https://files.pythonhosted.org/packages/83/b8/cd931487d250565392c39409117436d910232c8a3ac09ea2fb62a6c47bff/virtualenv_clone-0.5.4-py2.py3-none-any.whl
+Collecting filelock<4,>=3.0.0 (from virtualenv->pipenv)
+  Downloading https://files.pythonhosted.org/packages/93/83/71a2ee6158bb9f39a90c0dea1637f81d5eef866e188e1971a1b1ab01a35a/filelock-3.0.12-py3-none-any.whl
+Collecting distlib<1,>=0.3.0 (from virtualenv->pipenv)
+  Downloading https://files.pythonhosted.org/packages/7d/29/694a3a4d7c0e1aef76092e9167fbe372e0f7da055f5dcf4e1313ec21d96a/distlib-0.3.0.zip (571kB)
+     |████████████████████████████████| 573kB 959kB/s 
+Collecting appdirs<2,>=1.4.3 (from virtualenv->pipenv)
+  Downloading https://files.pythonhosted.org/packages/3b/00/2344469e2084fb287c2e0b57b72910309874c3245463acd6cf5e3db69324/appdirs-1.4.4-py2.py3-none-any.whl
+Requirement already satisfied: six<2,>=1.9.0 in /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages (from virtualenv->pipenv) (1.15.0)
+Installing collected packages: filelock, distlib, appdirs, virtualenv, certifi, virtualenv-clone, pipenv
+  Running setup.py install for distlib ... done
+  WARNING: The script virtualenv is installed in '/Users/apple/Library/Python/3.8/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script virtualenv-clone is installed in '/Users/apple/Library/Python/3.8/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts pipenv and pipenv-resolver are installed in '/Users/apple/Library/Python/3.8/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed appdirs-1.4.4 certifi-2020.4.5.1 distlib-0.3.0 filelock-3.0.12 pipenv-2020.6.2 virtualenv-20.0.21 virtualenv-clone-0.5.4
+WARNING: You are using pip version 19.2.3, however version 20.1.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+(base) ovandoworkbook:2.coded_correspondence apple$ vi ~/.bash_profile
+(base) ovandoworkbook:2.coded_correspondence apple$ more ~/.bash_profile
+ee
+# Setting PATH for Python 3.8
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}"
+export PATH
+alias python="python3"
+alias pip="pip3"
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/apple/opt/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/apple/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/apple/opt/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/apple/opt/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+export PATH="/Users/apple/Library/Python/3.8/bin:PATH"
+/Users/apple/.bash_profile (END)
+
+

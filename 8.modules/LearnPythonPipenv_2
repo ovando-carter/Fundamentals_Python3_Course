@@ -1,0 +1,250 @@
+Last login: Sat Jun  6 15:21:08 on ttys002
+-bash: ee: command not found
+(base) ovandoworkbook:~ apple$ cd /Users/apple/Documents/coding/Courses/codeacademy/python/1.Intro_to_python_3/8.modules/project-1 
+(base) ovandoworkbook:project-1 apple$ ls
+(base) ovandoworkbook:project-1 apple$ pipenv -three
+Usage: pipenv [OPTIONS] COMMAND [ARGS]...
+Try 'pipenv -h' for help.
+
+Error: no such option: -t
+(base) ovandoworkbook:project-1 apple$ pipenv --three
+Creating a virtualenv for this project…
+Pipfile: /Users/apple/Documents/coding/Courses/codeacademy/python/1.Intro_to_python_3/8.modules/project-1/Pipfile
+Using /Library/Frameworks/Python.framework/Versions/3.8/bin/python3.8 (3.8.3) to create virtualenv…
+⠏ Creating virtual environment...created virtual environment CPython3.8.3.final.0-64 in 611ms
+  creator CPython3Posix(dest=/Users/apple/.local/share/virtualenvs/project-1-kd8oBn_Q, clear=False, global=False)
+  seeder FromAppData(download=False, pip=latest, setuptools=latest, wheel=latest, via=copy, app_data_dir=/Users/apple/Library/Application Support/virtualenv/seed-app-data/v1.0.1)
+  activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+
+✔ Successfully created virtual environment! 
+Virtualenv location: /Users/apple/.local/share/virtualenvs/project-1-kd8oBn_Q
+Creating a Pipfile for this project…
+(base) ovandoworkbook:project-1 apple$ pipenv install numpy
+Installing numpy…
+Adding numpy to Pipfile's [packages]…
+✔ Installation Succeeded 
+Pipfile.lock not found, creating…
+Locking [dev-packages] dependencies…
+Locking [packages] dependencies…
+Building requirements...
+Resolving dependencies...
+✔ Success! 
+Updated Pipfile.lock (456e4b)!
+Installing dependencies from Pipfile.lock (456e4b)…
+  🐍   ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 0/0 — 00:00:00
+To activate this project's virtualenv, run pipenv shell.
+Alternatively, run a command inside the virtualenv with pipenv run.
+(base) ovandoworkbook:project-1 apple$ numpy --version
+-bash: numpy: command not found
+(base) ovandoworkbook:project-1 apple$ pipenv install requests==2.18.1
+Installing requests==2.18.1…
+Adding requests to Pipfile's [packages]…
+✔ Installation Succeeded 
+Pipfile.lock (456e4b) out of date, updating to (f7b180)…
+Locking [dev-packages] dependencies…
+Locking [packages] dependencies…
+Building requirements...
+Resolving dependencies...
+✔ Success! 
+Updated Pipfile.lock (f7b180)!
+Installing dependencies from Pipfile.lock (f7b180)…
+  🐍   ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 0/0 — 00:00:00
+To activate this project's virtualenv, run pipenv shell.
+Alternatively, run a command inside the virtualenv with pipenv run.
+(base) ovandoworkbook:project-1 apple$ cd ../project-2
+(base) ovandoworkbook:project-2 apple$ pipenv --three
+Creating a virtualenv for this project…
+Pipfile: /Users/apple/Documents/coding/Courses/codeacademy/python/1.Intro_to_python_3/8.modules/project-2/Pipfile
+Using /Library/Frameworks/Python.framework/Versions/3.8/bin/python3.8 (3.8.3) to create virtualenv…
+⠇ Creating virtual environment...created virtual environment CPython3.8.3.final.0-64 in 504ms
+  creator CPython3Posix(dest=/Users/apple/.local/share/virtualenvs/project-2-uKbn2TJS, clear=False, global=False)
+  seeder FromAppData(download=False, pip=latest, setuptools=latest, wheel=latest, via=copy, app_data_dir=/Users/apple/Library/Application Support/virtualenv/seed-app-data/v1.0.1)
+  activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+
+✔ Successfully created virtual environment! 
+Virtualenv location: /Users/apple/.local/share/virtualenvs/project-2-uKbn2TJS
+Creating a Pipfile for this project…
+(base) ovandoworkbook:project-2 apple$ pipenv install numpy==1.15.2
+Installing numpy==1.15.2…
+Adding numpy to Pipfile's [packages]…
+✔ Installation Succeeded 
+Pipfile.lock not found, creating…
+Locking [dev-packages] dependencies…
+Locking [packages] dependencies…
+Building requirements...
+Resolving dependencies...
+✘ Locking Failed! 
+Traceback (most recent call last):
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/notpip/_vendor/urllib3/response.py", line 425, in _error_catcher
+    yield
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/notpip/_vendor/urllib3/response.py", line 507, in read
+    data = self._fp.read(amt) if not fp_closed else b""
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/notpip/_vendor/cachecontrol/filewrapper.py", line 62, in read
+    data = self.__fp.read(amt)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/http/client.py", line 454, in read
+    n = self.readinto(b)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/http/client.py", line 498, in readinto
+    n = self.fp.readinto(b)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/resolver.py", line 807, in <module>
+    main()
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/resolver.py", line 802, in main
+    _main(parsed.pre, parsed.clear, parsed.verbose, parsed.system, parsed.write,
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/resolver.py", line 785, in _main
+    resolve_packages(pre, clear, verbose, system, write, requirements_dir, packages)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/resolver.py", line 746, in resolve_packages
+    results, resolver = resolve(
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/resolver.py", line 728, in resolve
+    return resolve_deps(
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/utils.py", line 1378, in resolve_deps
+    results, hashes, markers_lookup, resolver, skipped = actually_resolve_deps(
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/utils.py", line 1094, in actually_resolve_deps
+    hashes = resolver.resolve_hashes()
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/utils.py", line 970, in resolve_hashes
+    resolved_hashes = self.resolver.resolve_hashes(self.results)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/piptools/resolver.py", line 149, in resolve_hashes
+    return {ireq: self.repository.get_hashes(ireq) for ireq in ireqs}
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/piptools/resolver.py", line 149, in <dictcomp>
+    return {ireq: self.repository.get_hashes(ireq) for ireq in ireqs}
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/piptools/repositories/pypi.py", line 404, in get_hashes
+    result = {
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/piptools/repositories/pypi.py", line 404, in <setcomp>
+    result = {
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/piptools/repositories/pypi.py", line 406, in <lambda>
+    map(lambda c: self._hash_cache.get_hash(c.link), matching_candidates)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/piptools/repositories/pypi.py", line 85, in get_hash
+    hash_value = self._get_file_hash(new_location) if not new_location.url.startswith("ssh") else None
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/piptools/repositories/pypi.py", line 94, in _get_file_hash
+    for chunk in iter(lambda: fp.read(8096), b""):
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/piptools/repositories/pypi.py", line 94, in <lambda>
+    for chunk in iter(lambda: fp.read(8096), b""):
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/notpip/_vendor/urllib3/response.py", line 529, in read
+    raise IncompleteRead(self._fp_bytes_read, self.length_remaining)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/notpip/_vendor/urllib3/response.py", line 430, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, "Read timed out.")
+pipenv.patched.notpip._vendor.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='files.pythonhosted.org', port=443): Read timed out.
+
+(base) ovandoworkbook:project-2 apple$ ls
+Pipfile
+(base) ovandoworkbook:project-2 apple$ pipenv install requests
+Installing requests…
+Adding requests to Pipfile's [packages]…
+✔ Installation Succeeded 
+Pipfile.lock not found, creating…
+Locking [dev-packages] dependencies…
+Locking [packages] dependencies…
+Building requirements...
+Resolving dependencies...
+✘ Locking Failed! 
+Traceback (most recent call last):
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/notpip/_vendor/urllib3/response.py", line 425, in _error_catcher
+    yield
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/notpip/_vendor/urllib3/response.py", line 507, in read
+    data = self._fp.read(amt) if not fp_closed else b""
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/notpip/_vendor/cachecontrol/filewrapper.py", line 62, in read
+    data = self.__fp.read(amt)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/http/client.py", line 454, in read
+    n = self.readinto(b)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/http/client.py", line 498, in readinto
+    n = self.fp.readinto(b)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/resolver.py", line 807, in <module>
+    main()
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/resolver.py", line 802, in main
+    _main(parsed.pre, parsed.clear, parsed.verbose, parsed.system, parsed.write,
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/resolver.py", line 785, in _main
+    resolve_packages(pre, clear, verbose, system, write, requirements_dir, packages)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/resolver.py", line 746, in resolve_packages
+    results, resolver = resolve(
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/resolver.py", line 728, in resolve
+    return resolve_deps(
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/utils.py", line 1378, in resolve_deps
+    results, hashes, markers_lookup, resolver, skipped = actually_resolve_deps(
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/utils.py", line 1094, in actually_resolve_deps
+    hashes = resolver.resolve_hashes()
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/utils.py", line 970, in resolve_hashes
+    resolved_hashes = self.resolver.resolve_hashes(self.results)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/piptools/resolver.py", line 149, in resolve_hashes
+    return {ireq: self.repository.get_hashes(ireq) for ireq in ireqs}
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/piptools/resolver.py", line 149, in <dictcomp>
+    return {ireq: self.repository.get_hashes(ireq) for ireq in ireqs}
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/piptools/repositories/pypi.py", line 404, in get_hashes
+    result = {
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/piptools/repositories/pypi.py", line 404, in <setcomp>
+    result = {
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/piptools/repositories/pypi.py", line 406, in <lambda>
+    map(lambda c: self._hash_cache.get_hash(c.link), matching_candidates)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/piptools/repositories/pypi.py", line 85, in get_hash
+    hash_value = self._get_file_hash(new_location) if not new_location.url.startswith("ssh") else None
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/piptools/repositories/pypi.py", line 94, in _get_file_hash
+    for chunk in iter(lambda: fp.read(8096), b""):
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/piptools/repositories/pypi.py", line 94, in <lambda>
+    for chunk in iter(lambda: fp.read(8096), b""):
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/notpip/_vendor/urllib3/response.py", line 529, in read
+    raise IncompleteRead(self._fp_bytes_read, self.length_remaining)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/apple/Library/Python/3.8/lib/python/site-packages/pipenv/patched/notpip/_vendor/urllib3/response.py", line 430, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, "Read timed out.")
+pipenv.patched.notpip._vendor.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='files.pythonhosted.org', port=443): Read timed out.
+
+(base) ovandoworkbook:project-2 apple$ ls
+Pipfile
+(base) ovandoworkbook:project-2 apple$ pipenv shell
+Launching subshell in virtual environment…
+bash-3.2$  . /Users/apple/.local/share/virtualenvs/project-2-uKbn2TJS/bin/activate
+(project-2) bash-3.2$ python 3
+/Users/apple/.local/share/virtualenvs/project-2-uKbn2TJS/bin/python: can't open file '3': [Errno 2] No such file or directory
+(project-2) bash-3.2$ python3
+Python 3.8.3 (v3.8.3:6f8c8320e9, May 13 2020, 16:29:34) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import numpy
+>>> print(numpy._version_)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'numpy' has no attribute '_version_'
+>>> print(numpy.__version__)
+1.15.2
+>>> exit()
+(project-2) bash-3.2$ exit
+exit
+(base) ovandoworkbook:project-2 apple$ cd ../project-1
+(base) ovandoworkbook:project-1 apple$ ls
+Pipfile		Pipfile.lock
+(base) ovandoworkbook:project-1 apple$ pipenv shell
+Launching subshell in virtual environment…
+bash-3.2$  . /Users/apple/.local/share/virtualenvs/project-1-kd8oBn_Q/bin/activate
+(project-1) bash-3.2$ python3
+Python 3.8.3 (v3.8.3:6f8c8320e9, May 13 2020, 16:29:34) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import numpy
+>>> print(numpy.__version__)
+1.18.5
+>>> import requests
+>>> print(requests.__version__)
+2.18.1
+>>> 
